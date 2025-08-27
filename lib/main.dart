@@ -52,14 +52,25 @@ class _AnaSayfaState extends State<AnaSayfa> {
         padding: EdgeInsets.only(top: 10),
         children: <Widget>[
           Container(
-            color: Colors.blue.shade300,
+            color: Colors.transparent,
             height: 150,
             width: double.infinity,
             child: ListView(
               padding: EdgeInsets.all(10),
               scrollDirection: Axis.horizontal,
               children: <Widget>[
-                listeElemani('assets/model1.jpeg', "assets/chanellogo.jpg")
+                listeElemani('assets/model1.jpeg', "assets/chanellogo.jpg"),
+                SizedBox(width: 30),
+                listeElemani('assets/model2.jpeg', "assets/louisvuitton.jpg"),
+                SizedBox(width: 30),
+                listeElemani('assets/model3.jpeg', "assets/chloelogo.jpg"),
+                SizedBox(width: 30),
+                listeElemani('assets/model1.jpeg', "assets/chanellogo.jpg"),
+                SizedBox(width: 30),
+                listeElemani('assets/model2.jpeg', "assets/louisvuitton.jpg"),
+                SizedBox(width: 30),
+                listeElemani('assets/model3.jpeg', "assets/chloelogo.jpg"),
+                SizedBox(width: 30),
               ],
             ),
           )
@@ -77,11 +88,34 @@ class _AnaSayfaState extends State<AnaSayfa> {
               height: 75,
               width: 75,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
+                borderRadius: BorderRadius.circular(40),
                 image: DecorationImage(image: AssetImage(imagePath), fit: BoxFit.cover),
+              ),
+            ),
+            Positioned(
+              top: 50,
+              left: 50,
+              child: Container(
+                height: 25,
+                width: 25,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  image: DecorationImage(image: AssetImage(logoPath), fit: BoxFit.cover)
+                ),
               ),
             )
           ],
+        ),
+        SizedBox(height: 10),
+        Container(
+          height: 30,
+          width: 75,
+          decoration: BoxDecoration(
+            color: Colors.brown,
+            borderRadius: BorderRadius.circular(15)
+          ),
+          alignment: Alignment.center,
+          child: Text("Follow", style: TextStyle(fontFamily: 'Montserrat', color: Colors.white)),
         )
       ],
     );
