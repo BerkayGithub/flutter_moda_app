@@ -2,7 +2,7 @@
 
 A new Flutter project. It is a non-functional fashion app design.
 
-<img width="1080" height="2424" alt="Screenshot_20251127_135706" src="https://github.com/user-attachments/assets/707c266f-c4cd-40e8-bc3e-b12bf22e4844" />
+<img width="216" height="485" alt="Screenshot_20251127_135706" src="https://github.com/user-attachments/assets/707c266f-c4cd-40e8-bc3e-b12bf22e4844" />
 
 ## DecorationImage
 
